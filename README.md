@@ -1,14 +1,14 @@
 # SafeScribe API - CP5
 
-[cite_start]Este projeto é uma implementação de uma API RESTful para a plataforma SafeScribe, desenvolvida como parte do Checkpoint 5. [cite: 1, 2]
+Este projeto é uma implementação de uma API RESTful para a plataforma SafeScribe, desenvolvida como parte do Checkpoint 5. 
 
-[cite_start]O objetivo é fornecer um backend seguro para gestão de notas e documentos sensíveis, com um sistema robusto de autenticação e autorização utilizando JSON Web Tokens (JWT). [cite: 3, 5]
+O objetivo é fornecer um backend seguro para gestão de notas e documentos sensíveis, com um sistema robusto de autenticação e autorização utilizando JSON Web Tokens (JWT). 
 
 ## Tecnologias Utilizadas
 
-* .NET 8:** Framework principal para a construção da API. [cite: 7]
-* ASP.NET Core Web API:** Tipo de projeto utilizado. [cite: 8]
-* JWT (JSON Web Tokens):** Para autenticação e autorização segura. [cite: 10]
+* .NET 8:** Framework principal para a construção da API.
+* ASP.NET Core Web API:** Tipo de projeto utilizado. 
+* JWT (JSON Web Tokens):** Para autenticação e autorização segura. 
 * Entity Framework Core In-Memory:** Para persistência de dados de forma simplificada.
 
 * ## Pré-requisitos e Instalação
@@ -17,7 +17,7 @@ Antes de começar, você precisa ter o SDK do .NET 8 (ou superior) instalado em 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [Link do Projeto no GITHUB]
+    git clone https://github.com/Dametto98/CP5_ASP.NET
     cd SafeScribe.API
     ```
 
