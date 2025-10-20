@@ -1,8 +1,8 @@
-﻿using System;
-
-public class Class1
+﻿namespace SafeScribe.API.Services
 {
-	public Class1()
-	{
-	}
+    public interface ITokenBlacklistService
+    {
+        Task AddToBlacklistAsync(string jti);
+        Task<bool> IsBlacklistedAsync(string jti);
+    }
 }

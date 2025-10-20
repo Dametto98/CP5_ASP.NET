@@ -20,13 +20,13 @@ namespace SafeScribe.API.Middleware
                 var jti = user.FindFirst(JwtRegisteredClaimNames.Jti)?.Value;
                 if (jti != null && await blacklistService.IsBlacklistedAsync(jti))
                 {
-                    // Se o token está na blacklist, retorna 401 Unauthorized
+
                     context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                     return;
                 }
             }
 
-            await _next(context); // Se não, continua para o próximo middleware
+            await _next(context); 
         }
     }
 }
