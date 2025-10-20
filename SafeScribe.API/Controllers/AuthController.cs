@@ -8,9 +8,18 @@ namespace SafeScribe.API.Controllers
     [ApiController]
     [Route("api/v1/auth")] 
     public class AuthController : ControllerBase
+
+        private readonly ITokenService _tokenService;
+        private readonly ITokenBlacklistService _blacklistService; 
+        private static readonly List<User> _users = new();
+
+        public AuthController(ITokenService tokenService, ITokenBlacklistService blacklistService) 
+        {
+            _tokenService = tokenService;
+            _blacklistService = blacklistService; 
+        }
     {
         private readonly ITokenService _tokenService;
-        // Lista em memória para simular um anco de dados de usuários
         private static readonly List<User> _users = new();
 
         public AuthController(ITokenService tokenService)
